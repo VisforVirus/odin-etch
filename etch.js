@@ -1,8 +1,14 @@
 function createGrid(contain,squares) {
 
+    const newDivContainer = document.createElement('div');
     const newDiv = document.createElement('div');
+    
+    newDivContainer.classList.add('gridSquareContainer');
     newDiv.classList.add('gridSquare');
-    contain.appendChild(newDiv);
+    
+    newDivContainer.appendChild(newDiv);
+    contain.appendChild(newDivContainer);
+    
 
 }
 
