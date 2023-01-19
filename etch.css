@@ -4,6 +4,13 @@ body {
     align-items: center;
 }
 
+.gridSquare {
+    border-style: solid;
+    border-color:aqua;
+    width: auto;
+    height: auto;
+}
+
 #container {
     display: flex;
     justify-content: center;
