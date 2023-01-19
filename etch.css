@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color:aqua;
+    width: 960px;
+    height: 960px;
+}
