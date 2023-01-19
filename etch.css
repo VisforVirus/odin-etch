@@ -6,17 +6,17 @@ body {
 
 .gridSquare {
     border-style: solid;
-    border-color:aqua;
-    width: auto;
-    height: auto;
+    border-color:crimson;
+    flex-grow: 1;
 }
 
 #container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch; /*This makes the boxes fill the height properly*/
     border-style: solid;
     border-color:aqua;
     width: 960px;
     height: 960px;
+
 }
