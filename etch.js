@@ -16,6 +16,17 @@ function gridX(contain,className,squares) {
 
 }
 
+function changeColour(square) {
+    let val = 0;
+    const vals = [];
+    for (let i = 0; i < 3; i++) {
+        vals.push(Math.floor(Math.random() * 255) + 1);
+    }
+
+    square.style.backgroundColor = 'rgb(' + vals[0] + ',' + vals[1] + ',' + vals[2] + ')';
+    //console.log(...vals)
+}
+
 const button = document.querySelector('button');
 const container = document.querySelector('#container');
 
@@ -28,10 +39,18 @@ button.addEventListener('click', () => {
     }
 
     for(let q = 0; q < val; q++){
-        createGrid('#container','gridSquareContainer');
+        createGrid('#container','gridSquareContainer');//Row
         for (let i = 0; i < val; i++){
-            gridX('.gridSquareContainer','gridSquare',q);
+            gridX('.gridSquareContainer','gridSquare',q);//Column
         }
     }
+
+    const grid = document.querySelectorAll('.gridSquare');
+
+    grid.forEach(element => {
+        element.addEventListener('mouseover',  (e) => {
+            changeColour(e.target)
+        })
+    });
 })
 

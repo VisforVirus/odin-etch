@@ -5,16 +5,19 @@ body {
 }
 
 .gridSquare {
-    border-style: solid;
+    /*border-style: solid;
     border-color:crimson;
+    */
     flex-grow: 1;
+    transition: background-color 0.5s ease;
+    
 }
 
 .gridSquareContainer {
     display: flex;
     flex-direction: row;
-    border-style: solid;
-    border-color:purple;
+    /*border-style: solid;
+    border-color:purple;*/
     flex-grow: 1;
 }
 
